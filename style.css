@@ -1,0 +1,782 @@
+:root {
+  --hover-color: #993737;
+  --main-color: #2b2b2b;
+  --text-color: #a8a8a8;
+  --main--color2: #ececec;
+  --h1-size: 2.8rem;
+  --h2-size: 1.5rem;
+}
+body {
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  font-family: "Playfair Display";
+  background-color: var(--main--color2);
+}
+main {
+  width: 100%;
+}
+/* NAVBAR */
+.navbar {
+  box-sizing: border-box;
+  height: 70px;
+  background-color: var(--main-color);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 5px 7px rgba(11, 11, 11, 0.2);
+}
+/* Links on page */
+.links {
+  list-style: none;
+  display: flex;
+}
+.links li a {
+  margin-right: 100px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: color 0.2s ease-in-out;
+}
+.links li a:hover {
+  color: var(--hover-color);
+}
+/* Top logo */
+.logo {
+  width: 90px;
+  height: 90px;
+  transform: translate(4.3rem, 0);
+}
+
+/* SECTION 1 */
+.first-section {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+/* Image section */
+.image-section {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: 75px;
+}
+.main-image {
+  transform: translate(0, 1.9rem);
+  width: 400px;
+  position: relative;
+}
+/* Triangle on image  */
+.image-section::after {
+  content: " ";
+  position: absolute;
+  width: 270px;
+  height: 230px;
+  background: linear-gradient(to bottom, #000000, #ffffff);
+  clip-path: polygon(50% 0, 100% 100%, 0%100%, 0 100%);
+  top: 38px;
+  left: 225px;
+  opacity: 0.7;
+  z-index: -1;
+}
+/* Word "TATTOO" on 1 slide */
+.image-section::before {
+  content: "tattoo";
+  font-family: "Libre Baskerville";
+  font-size: 200px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  position: absolute;
+  color: gray;
+  text-shadow:
+    2px 2px 0 #000000,
+    2px -2px 0 #000000,
+    -2px 2px 0 #000000,
+    -2px -2px 0 #000000,
+    2px 0px 0 #000000,
+    0px 2px 0 #000000,
+    -2px 0px 0 #000000,
+    0px -2px 0 #000000;
+  top: 60px;
+  left: 0;
+  z-index: -1;
+  opacity: 0.1;
+}
+/* Text section */
+.text-section {
+  width: 50%;
+  max-width: 400px;
+  box-sizing: border-box;
+  padding: 200px 0 0 5%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+.text-section h1 {
+  letter-spacing: 2px;
+  text-decoration: line-through;
+  font-size: var(--h1-size);
+}
+/* Button  */
+.btn-book {
+  margin-top: 25%;
+  width: 100%;
+  max-width: 550px;
+  height: 70px;
+  border-radius: 40px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+.btn-book:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+
+/* SECTION 2 */
+.second-section {
+  width: 100%;
+  background-color: var(--main-color);
+  min-height: 100vh;
+  position: relative;
+}
+/* Image between section 1 and 2 */
+.dope-image {
+  position: absolute;
+  width: 200px;
+  top: -100px;
+}
+/* Text section in 2 section */
+.text-section-2 {
+  width: 50%;
+  max-width: 25rem;
+  box-sizing: border-box;
+  padding: 8rem 5% 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: 70px;
+  color: var(--text-color);
+}
+.text-section-2 h1 {
+  letter-spacing: 2px;
+  font-size: var(--h1-size);
+  font-weight: lighter;
+  color: var(--main--color2);
+}
+.image-section-2 {
+  width: 50%;
+  transform: translate(15rem, 3.5rem);
+}
+/* Image in section 2 */
+.tattoos {
+  width: 500px;
+}
+/* Second btn */
+.btn-designs {
+  margin-top: 25%;
+  width: 100%;
+  max-width: 550px;
+  height: 70px;
+  border-radius: 40px;
+  border: none;
+  background-color: var(--main--color2);
+  color: var(--main-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+.btn-designs:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+
+/* SECTION 3 */
+.preview-culture {
+  width: 100%;
+  min-height: 100vh;
+}
+/* Text section in 3 section */
+.text-section-3 {
+  width: 50%;
+  max-width: 400px;
+  box-sizing: border-box;
+  padding: 100px 5% 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: 70px;
+  color: var(--text-color);
+  position: relative;
+}
+.text-section-3 h1 {
+  letter-spacing: 2px;
+  font-size: var(--h1-size);
+  font-weight: lighter;
+  color: #000;
+}
+/* Image under the text */
+.man {
+  width: 400px;
+  position: absolute;
+  top: 350px;
+  left: -80px;
+}
+/* Video  */
+.section-video {
+  width: 50%;
+  transform: translate(3rem, -1.5rem);
+}
+.section-video iframe {
+  padding-top: 50px;
+  padding-left: 300px;
+}
+/* FOOTER */
+.footer {
+  width: 100%;
+  background-color: var(--main-color);
+  box-sizing: border-box;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 60px;
+}
+.footer::after {
+  position: absolute;
+  content: "© 2026 Faez tgh | All right reserved";
+  align-items: center;
+  color: var(--text-color);
+  top: 220px;
+}
+/* Border between two footer section */
+.footer::before {
+  position: absolute;
+  content: " ";
+  height: 150px;
+  align-items: center;
+  border: 1px solid grey;
+  top: 40px;
+}
+/* Contact section */
+.contact {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+  padding-top: 50px;
+  margin-left: 70px;
+}
+/* Icon for links */
+.icon-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+/* Social section */
+.social {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 90px;
+  padding-left: 90px;
+}
+.icon-link img {
+  width: 50px;
+  height: 50px;
+}
+.icon-link img:hover {
+  cursor: pointer;
+}
+
+/* About page */
+
+.section--about {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  margin-left: 4.3rem;
+}
+.text--section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 22rem;
+}
+.text--section h1 {
+  letter-spacing: 0.2rem;
+  font-size: var(--h1-size);
+}
+.text--section h2 {
+  font-size: var(--h2-size);
+  color: var(--text-color);
+  margin: 0;
+  font-weight: 400;
+}
+.text--section p {
+  color: var(--text-color);
+}
+/* Button 2 */
+.btn {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.btn-contact {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 15rem;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: 2.5rem;
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+.btn-contact:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+.btn-designs-second {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 15rem;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: 2.5rem;
+  background-color: white;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+.btn-designs-second:hover {
+  background-color: var(--hover-color);
+  border: none;
+  cursor: pointer;
+}
+/* Frame */
+.frame {
+  border: 0.2rem solid black;
+  width: 22rem;
+  height: 30rem;
+  transform: translate(40rem, 7rem);
+  position: relative;
+  z-index: -1;
+}
+/* Name under frame */
+.frame::after {
+  content: "name";
+  position: absolute;
+  font-size: var(--h1-size);
+  top: 27.8rem;
+  left: 7.8rem;
+  color: var(--hover-color);
+  text-shadow: 5px 3px 5px #000000;
+}
+
+/* Works page */
+.main-works {
+  background-color: #260202;
+}
+.design-section {
+  position: relative;
+}
+.design-section::before {
+  content: " ";
+  width: 100%;
+  height: 25rem;
+  position: absolute;
+  background-color: #2b2b2b;
+  opacity: 90%;
+}
+.design-section::after {
+  content: "Designs";
+  letter-spacing: 2rem;
+  position: absolute;
+  font-size: 10rem;
+  top: 5rem;
+  left: 25rem;
+}
+.design {
+  width: 100%;
+  height: 25rem;
+}
+
+.tattoo-section {
+  background-color: #260202;
+  padding-bottom: 20rem;
+}
+.styles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10rem 0 5rem 0;
+}
+.styles li {
+  list-style: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+}
+.designs-grid {
+  display: grid;
+  grid-template-areas:
+    "design-1 design-2 design-3"
+    "design-4 design-5 design-6";
+  row-gap: 6rem;
+  column-gap: 6rem;
+  margin: 0 6rem 0 6rem;
+}
+
+.design-tattoo img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 20px;
+}
+.design-tattoo img:hover {
+  cursor: pointer;
+}
+/* Site scale for other device */
+
+@media only screen and (max-width: 1443px) {
+  /* Home page */
+  .image-section::after {
+    left: 210px;
+  }
+  /* About page */
+  .frame {
+    transform: translate(32rem, 7rem);
+  }
+  /* Work page */
+  .styles li {
+    font-size: 1.5rem;
+  }
+  .designs-grid {
+    row-gap: 4rem;
+    column-gap: 4rem;
+    margin: 0 4rem 0 4rem;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  /* Home page */
+  .image-section::after {
+    left: 170px;
+  }
+  .image-section-2 {
+    transform: translate(10rem, 3.5rem);
+  }
+  .section-video {
+    transform: translate(-2rem, -1.5rem);
+  }
+  /* About page */
+  .frame {
+    transform: translate(25rem, 7rem);
+  }
+  /* Work page */
+  .design-section::after {
+    font-size: 10rem;
+    top: 5rem;
+    left: 17rem;
+  }
+  .designs-grid {
+    row-gap: 3rem;
+    column-gap: 3rem;
+    margin: 0 3rem 0 3rem;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  /* Home page */
+  .image-section::after {
+    left: 140px;
+  }
+  .image-section-2 {
+    transform: translate(5rem, 3.5rem);
+  }
+  .section-video {
+    transform: translate(-8rem, -1.5rem);
+  }
+  /* About page */
+  .text--section h1 {
+    font-size: 2.4rem;
+  }
+  .text--section h2 {
+    font-size: 1.3rem;
+  }
+  .frame {
+    transform: translate(18rem, 7rem);
+  }
+  .btn-contact {
+    max-width: 12rem;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+  .btn-designs-second {
+    max-width: 12rem;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+  /* Work page */
+  .design-section::after {
+    left: 13rem;
+  }
+  .designs-grid {
+    row-gap: 3rem;
+    column-gap: 3rem;
+    margin: 0 3rem 0 3rem;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .tattoos {
+    display: none;
+  }
+  .section-video iframe {
+    opacity: 0;
+  }
+  .frame {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  /* Home page */
+  /* Section 1 */
+  .image-section::after {
+    left: 130px;
+  }
+  .image-section::before {
+    display: none;
+  }
+  .image-section-2 {
+    transform: translate(5rem, 3.5rem);
+  }
+  .section-video {
+    transform: translate(-8rem, -1.5rem);
+  }
+  .text-section h1 {
+    font-size: 2.3rem;
+  }
+  .btn-book {
+    height: 3.5rem;
+    font-size: 1.2rem;
+  }
+  /* Section 2 */
+
+  .text-section-2 h1 {
+    font-size: 2.3rem;
+  }
+
+  .btn-designs {
+    max-width: 400px;
+    height: 3.5rem;
+    font-size: 1.5rem;
+  }
+  /* Section 3 */
+
+  .text-section-3 h1 {
+    font-size: 2.3rem;
+  }
+  .man {
+    width: 350px;
+    position: absolute;
+    top: 400px;
+    left: -70px;
+  }
+  /* Work page */
+  .design-section::after {
+    font-size: 5rem;
+    top: 8rem;
+    left: 11rem;
+  }
+  .designs-grid {
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin: 0 1rem 0 1rem;
+  }
+  /* Footer */
+  .social {
+    padding-left: 0;
+  }
+  .icon-link img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  /* Main syles */
+  html,
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-section,
+  .text-section,
+  .text-section-2,
+  .image-section-2,
+  .text-section-3,
+  .section-video {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-section-2,
+  .section-video,
+  .main-image {
+    transform: none;
+  }
+  /* Home page */
+
+  .links li a {
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  .logo {
+    transform: none;
+    margin-left: 10px;
+  }
+
+  /* Section 1 */
+  .image-section {
+    margin-left: 0px;
+  }
+  .image-section::after {
+    left: 80px;
+  }
+  .image-section::before {
+    font-size: 11.5rem;
+  }
+  .image-section-2 {
+    transform: translate(5rem, 3.5rem);
+  }
+  .section-video {
+    transform: translate(-8rem, -1.5rem);
+  }
+  .text-section h1 {
+    font-size: 2.3rem;
+  }
+  .btn-book {
+    height: 3.5rem;
+    font-size: 1.2rem;
+  }
+  .dope-image {
+    width: 5rem;
+    top: -2rem;
+  }
+  .tattoos {
+    display: none;
+  }
+  /* Section 3 */
+  .text-section-3 h1 {
+    font-size: 2.3rem;
+  }
+  .man {
+    top: 400px;
+    left: 2rem;
+  }
+  /* About page */
+  .section--about {
+    margin-left: 1rem;
+  }
+  /* Work page */
+  .design-section::after {
+    font-size: 3rem;
+    top: 8rem;
+    left: 2rem;
+  }
+  .designs-grid {
+    row-gap: 3rem;
+    column-gap: 1rem;
+    margin: 0 1rem 0 1rem;
+  }
+  .tattoo-section {
+    background-color: #260202;
+    padding-bottom: 5rem;
+  }
+  .styles {
+    padding: 10rem 0 5rem 0;
+    gap: 3rem;
+  }
+  .styles li {
+    font-size: 0.7rem;
+  }
+  /* Footer */
+  .icon-link img {
+    width: 40px;
+    height: 40px;
+  }
+  .contact,
+  .social {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 2rem;
+    align-items: center;
+  }
+  .footer::before {
+    display: none;
+  }
+  .footer::after {
+    display: none;
+  }
+}
